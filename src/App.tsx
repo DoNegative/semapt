@@ -1,25 +1,38 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from "react";
+// import {
+//   BrowserRouter as Router,
+//   Routes as Switch,
+//   Route,
+//   Link,
+//   Navigate,
+// } from "react-router-dom";
+import AuthorizationBox from "./pages/Authorization/AuthorizationBox";
+import "./pages/Authorization/Authorization.css"
+import MainPage from "./pages/MainPage";
 
 function App() {
+  useEffect(() => {
+    //localStorage.removeItem("accessToken")
+    console.log(accessToken);
+    console.log("app");
+  }, []);
+  const accessToken = localStorage.getItem("accessToken");
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <MainPage></MainPage>
+    ///<AuthorizationBox></AuthorizationBox>
+    // <Router >
+    //   {accessToken ? (
+    //     // токен есть
+    //     <Switch>
+    //       <Route path="*" element={<Users />}></Route>
+    //     </Switch>
+    //   ) : (
+    //     // токена нет
+    //     <Switch>
+    //       <Route path="*" element={<AuthorizationBox />}></Route>
+    //     </Switch>
+    //   )}
+    // </Router>
   );
 }
 

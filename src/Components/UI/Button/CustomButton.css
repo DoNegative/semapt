@@ -1,0 +1,57 @@
+.timePeriodButton{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 12px;
+    gap: 10px;
+    width: 72px;
+    height: 42px;
+    background: #FFFFFF ;
+    /* Soft blue */
+    border: 1px solid #76ACFE;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #333333;
+}
+.timePeriodButton:hover {
+    /* Warm blue */
+    border: 1px solid #1673FF;
+    /* Small field */
+    box-shadow: 0px 0px 8px rgba(3, 0, 124, 0.1);
+    border-radius: 6px;
+}
+.timePeriodButtonActive { 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 12px;
+    gap: 10px;
+    width: 72px;
+    height: 42px;
+    border-radius: 6px;
+    background: #EDF4FF;
+    border:none
+}
+button.primary {
+    align-items: center;
+    padding: 8px 10px;
+    border: 1px solid #4791FF;
+    border-radius: 6px;
+    color: #000;
+    background-color:#fff;
+    cursor: pointer;
+}
+
+button.primary:hover {
+    background-color: rgba(71, 145, 255, 1);
+    color: #fff;
+}
+
+button.primary:disabled {
+    background-color: #fff;
+    color: rgba(0, 0, 0, 0.2);
+    border-color: #CADFFF;
+    cursor: default;
+}
