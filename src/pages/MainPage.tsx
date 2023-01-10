@@ -18,9 +18,9 @@ function MainPage() {
         className="BG header"
       >
         Кабинет администратора
-        <a  style={{paddingRight:"100px", cursor:"pointer"}}>Выход</a>
       </div>
-      <Tabs
+      <Users ></Users>
+      {/* <Tabs
         defaultActiveKey="1"
         onChange={onChange}
         centered={true}
@@ -30,7 +30,7 @@ function MainPage() {
           tab={<span style={{ fontSize: "24px" }}>Работники</span>}
           key="1"
         >
-          <Users></Users>
+        
         </TabPane>
         <TabPane
           tab={<span style={{ fontSize: "24px" }}>Должности</span>}
@@ -38,7 +38,7 @@ function MainPage() {
         >
           123123
         </TabPane>
-      </Tabs>
+      </Tabs> */}
     </div>
   );
 }

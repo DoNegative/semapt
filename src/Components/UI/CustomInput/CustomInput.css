@@ -1,9 +1,8 @@
 .InputField{
     padding: 10px 13px;
-
     display: flex;
     justify-content: space-between;
-    height: 42px;
+    height: 20px;
 
     border-radius: 6px;
     border: 1px solid #4791FF;
@@ -26,4 +25,7 @@
     font-size: 14px;
     line-height: 160%;
     color:rgba(0, 0, 0, 0.7)
+}
+.TitleH4{
+    font-size: 14px;
 }
